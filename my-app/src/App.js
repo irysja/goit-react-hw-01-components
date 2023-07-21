@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import user from './user.json';
 import stats from './data.json';
 import friends from './friends.json';
@@ -9,7 +7,7 @@ import Statistics from './statistics.js';
 import FriendList from './friends.js';
 import TransactionHistory from './transaction.js';
 
-const App = root => {
+const App = ({ app }) => {
   return (
     <div>
       <Profile
@@ -26,5 +24,4 @@ const App = root => {
   );
 };
 
-const root = document.getElementById('root');
-ReactDOM.createRoot(root).render(<App />);
+export default App;
