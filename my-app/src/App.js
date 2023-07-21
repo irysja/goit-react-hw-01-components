@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import user from './user.json';
+import stats from './data.json';
+import friends from './friends.json';
+import transactions from './transactions.json';
+import Profile from './profile.js';
+import Statistics from './statistics.js';
+import FriendList from './friends.js';
+import TransactionHistory from './transaction.js';
 
-function App() {
+const App = root => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Profile
+        username={user['username']}
+        tag={user.tag}
+        location={user['location']}
+        avatar={user.аватар}
+        stats={user.stats}
+      />
+      <Statistics title="Upload stats" stats={stats} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
-}
+};
 
-export default App;
+const root = document.getElementById('root');
+ReactDOM.createRoot(root).render(<App />);

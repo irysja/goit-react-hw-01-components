@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.App-TransactionHistory.module.css{
+  .transaction-history {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .transaction-history th,
+  .transaction-history td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .transaction-history th {
+    background-color: #f2f2f2;
+  }
+}
