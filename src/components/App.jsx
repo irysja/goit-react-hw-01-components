@@ -1,4 +1,4 @@
-export const App = () => {
+/*export const App = () => {
   return (
     <div
       style={{
@@ -13,4 +13,6 @@ export const App = () => {
       React homework template
     </div>
   );
-};
+};*/
+
+import MyApp from '../../my-app/src/index.js';
