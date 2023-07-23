@@ -1,4 +1,4 @@
-/*export const App = () => {
+export const App = () => {
   return (
     <div
       style={{
@@ -13,6 +13,6 @@
       React homework template
     </div>
   );
-};*/
+};
 
-import MyApp from '../../my-app/src/index.js';
+//import MyApp from '../../my-app/src/index.js';
