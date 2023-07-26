@@ -7,6 +7,7 @@ import TransactionHistory from '../transaction/transaction.js';
 import Profile from '../profile/profile.js';
 import Statistics from '../statistics/statistics.js';
 
+
 const App = ({ app }) => {
   return (
     <div>
